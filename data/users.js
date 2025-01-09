@@ -1,22 +1,24 @@
 const users = [
     {
       id: 1,
-      name: "Carey",
-      username: "cyare23",
-      email: "cy23@example.com",
+      username: "LuckyStarzzz",
+      password: "imfeelinglucky",
     },
     {
       id: 2,
-      name: "Mikoto",
-      username: "Miiko",
-      email: "mikoto_u@example.com",
+      username: "LexiLove",
+      password: "lovemealexi",
     },
     {
       id: 3,
-      name: "Ronald",
-      username: "RonRonRon",
-      email: "mronald@example.com",
+      username: "Arrietty",
+      password: "mexicanarealness",
+    },
+    {
+      id: 4,
+      username: "Suzie Toot",
+      password: "morsecode",
     },
 ];
 
-module.exports = users;
+module.exports = users

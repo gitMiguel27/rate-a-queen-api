@@ -3,23 +3,22 @@ const app = express()
 const port = 3000
 
 const userRoutes = require('./routes/userRoutes')
-const postRoutes = require('./routes/postRoutes')
+const rateRoutes = require('./routes/rateRoutes')
 
 //MIDDLEWARE
-app.use('/api/users', userRoutes)
-app.use('/api/posts', postRoutes)
-
+app.use("/users", userRoutes)
+app.use("/rates", rateRoutes)
 app.use(express.json())
 
 app.get("/", (req, res) => {
-  res.send("Work in progress!");
+  res.send("API for Rate A Queen")
 })
 
 app.use((req, res) => {
-  res.status(404);
-  res.json({ error: "resource not found" });
+  res.status(404)
+  res.json({ error: "resource not found" })
 })
 
 app.listen(port, () => {
-  console.log(`server listening on port: ${port}`);
+  console.log(`server listening on port: ${port}`)
 })
