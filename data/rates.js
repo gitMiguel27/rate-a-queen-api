@@ -2,9 +2,32 @@ const rates = [
     {
       id: 1,
       userId: 1,
-      title: "est et quae odit qui non",
-      content:
-        "similique esse doloribus nihil accusamus\nomnis dolorem fuga consequuntur reprehenderit fugit recusandae temporibus\nperspiciatis cum ut laudantium\nomnis aut molestiae vel vero",
+      dragQueen: "Lexi Love",
+      rate: 2,
+    },
+    {
+      id: 2,
+      userId: 1,
+      dragQueen: "Suzie Toot",
+      rate: 1,
+    },
+    {
+      id: 3,
+      userId: 1,
+      dragQueen: "Arriety",
+      rate: 3,
+    },
+    {
+      id: 4,
+      userId: 2,
+      dragQueen: "Lucky Starzzz",
+      rate: 1,
+    },
+    {
+      id: 5,
+      userId: 3,
+      dragQueen: "Lucky Starzzz",
+      rate: 1,
     },
 ];
 

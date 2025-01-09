@@ -8,16 +8,10 @@ router.get("/", (req, res) => {
   res.json(rates)
 })
 
-router
-  .route("/:id")
-  .get((req, res, next) => {
-    const rate = rates.find((p) => p.id == req.params.id)
-    if (rate) res.json(rate)
-    else next()
-  })
-  .patch((req, res) => {
-  })
-  .delete((req, res) => {
-  })
+router.get("/id", (req, res) => {
+  const rate = rates.find((r) => r.id == req.params.id)
+  if (rate) res.json(rate)
+  else next()
+})
 
 module.exports = router
