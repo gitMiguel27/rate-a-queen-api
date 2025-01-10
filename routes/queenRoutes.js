@@ -14,4 +14,10 @@ router.get("/:id", (req, res, next) => {
   else next()
 })
 
+router.get("/:id/ratings", (req, res) => {
+  const queen = queens.find((q) => q.id == req.params.id)
+  if (queen) res.json(queen.ratings)
+  else next()
+})
+
 module.exports = router
