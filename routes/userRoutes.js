@@ -56,4 +56,10 @@ router
     if (user) res.json(user)
   })
 
+router.get("/:id/ratings", (req, res) => {
+  const user = users.find((u) => u.id == req.params.id)
+  if (user) res.json(user.myRatings)
+  else next()
+})
+
 module.exports = router

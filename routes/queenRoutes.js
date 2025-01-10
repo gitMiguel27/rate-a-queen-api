@@ -1,16 +1,16 @@
 const express = require("express")
 const router = express.Router()
-const rates = require('../data/rates')
+const queens = require('../data/queens')
 
 router.use(express.json())
 
 router.get("/", (req, res) => {
-  res.json(rates)
+  res.json(queens)
 })
 
 router.get("/:id", (req, res, next) => {
-  const rate = rates.find((r) => r.id == req.params.id)
-  if (rate) res.json(rate)
+  const queen = queens.find((q) => q.id == req.params.id)
+  if (queen) res.json(queen)
   else next()
 })
 

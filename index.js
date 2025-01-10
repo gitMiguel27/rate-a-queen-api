@@ -4,10 +4,12 @@ const port = 3000
 
 const userRoutes = require('./routes/userRoutes')
 const rateRoutes = require('./routes/rateRoutes')
+const queenRoutes = require('./routes/queenRoutes')
 
 //MIDDLEWARE
 app.use("/users", userRoutes)
 app.use("/rates", rateRoutes)
+app.use("/queens", queenRoutes)
 app.use(express.json())
 
 app.get("/", (req, res) => {
